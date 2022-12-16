@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/484b78abbd.js" crossorigin="anonymous"></script>
+    <style>
+        div.carousel img
+            {
+                float: left;
+                padding: 2rem;
+            }
+        body {
+            background-image: url("https://images.hdqwalls.com/download/abstract-simple-background-4k-lp-1920x1080.jpg");
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Portfolio</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm navbar-light">
+    <div class="container-fluid">
+        <a class="navbar-brand"><h2>ZANYZEBRA</h2></a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="navbar-item"><a class="nav-link" href="https://zanyzebra175.github.io/responsiveredesignpage/samson" target="_blank"><h5>Samson Realty Redesign</h5></a></li>
+                <li class="navbar-item"><a class="nav-link" href="https://zanyzebra175.github.io/basketball-shop" target="_blank"><h5>Basketball Barn</h5></a></li>
+                <li class="navbar-item"><a class="nav-link" href="https://zanyzebra175.github.io/personasproject/" target="_blank"><h5>Personas Project</h5></a></li>
+                <li class="navbar-item"><a class="nav-link" href="https://fastgorilla146.github.io/Iterative-Design/" target="_blank"><h5>Cambio Design</h5></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="d-flex flex-column justify-content-center align-items-center" data-aos="zoom-in" data-aos-duration="2000">
+    <h3>I'm ZanyZebra, Welcome to my Portfolio!</h3>
+    <img src="images/zebra transparent.png" style="width: 10%;">
+    <br>
+</div>
+
+<div class="justify-content-center align-items-center">
+    <div class="card-row" style="display: flex;"">
+        <div class="infocard justify-content-center" data-aos="fade-up" data-aos-duration="2000">
+        <h3 class="cardtext">Bio:</h3>
+        <p class="cardtext">
+            Hey there fellow zebras! I am a computer science student at Brown University, primarily interested
+            in creating and projects and applications for the purpose of understanding user behavior and psychology. More so than any front-end programming,
+            I wish to demonstrate an interest in understanding user psychology and creating designs that are especially tailored towards said users. 
+            On the side, I love to play basketball, perform music, and bask in the sun with my black and white stripes of course!
+        </p>
+        </div>
+        <div class="infocard justify-content-center" data-aos="fade-up" data-aos-duration="2500">
+            <h3 class="cardtext">Portfolio Goals:</h3>
+            <p class="cardtext">
+                Below, you will find a carousel that will allow you to navigate through four projects from the course of this semester that allowed me
+                to practice skills relavent to understanding user behavior, either through programming, design, or research. Each project within the carousel contains
+                cards under to describe the context of the project as well as lessons learned from said project. I hope to demonstrate that I'm more than just a
+                typical black and white (pun intended) user researcher, but instead that I put careful thought into tailoring the design experience to my users. 
+            </p>
+        </div>
+        <div class="infocard justify-content-center" data-aos="fade-up" data-aos-duration="3000">
+            <h3 class="cardtext">Contact Me:</h3>
+            <p class="cardtext">
+                Unfortunately, I am in many ways restricted from sharing my contact information directly. There's currently a law that says that zebras like myself must remain anonymous,
+                but here's what you can do!
+                Feel free to email me at zanyzebra@gmail.com or visit my github page (<a href="https://github.com/zanyzebra175" target="_blank">https://github.com/zanyzebra175</a>), where you can check out my projects
+                directly and find ways to communicate directly through Github. Looking forward to connecting!   
+            </p>
+        </div>
+    </div>
+</div>
+<div class="d-flex flex-column justify-content-center align-items-center">
+    <hr style="background-color:black; height:10px; width:100%;color:black">
+
+    <div class="d-flex flex-column justify-content-center align-items-center" data-aos="fade-up">
+    <h3>Piece Descriptions</h3>
+    <h5 style="font-style: italic; text-align: center; max-width: 50rem;">
+        Instructions: Please use the arrows on each side of the carousel or click on the thumbnail
+        images below to navigate between projects.
+        The description cards below will update accordingly. 
+    </h5>
+    </div>
+    <br>
+        <!-- The following code is adapted from https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp-->
+        <!-- Container for the image gallery -->
+    <div class="container" data-aos="fade-up">
+
+        <!-- Full-width images with number text -->
+        <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+            <img src="images/Samson.png" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+            <img src="images/Basketball Shop.png" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+            <img src="images/Personas.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+                <img src="images/Cambio Screenshot.png" style="width:100%">
+        </div>
+    
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        <!-- Image text -->
+        <div class="caption-container">
+        <p id="caption"></p>
+        </div>
+    
+        <!-- Thumbnail images -->
+        <div class="row" style="display: flex;" style="justify-content: center;">
+        <div class="column">
+            <img class="demo cursor" src="images/Samson.png" style="width:80%" onclick="currentSlide(1);setDescription(1);" alt="Please scroll down for Information on the Samson Realty Project.">
+        </div>
+        <div class="column" style="justify-content: center;">
+            <img class="demo cursor" src="images/Basketball Shop.png" style="width:80%" onclick="currentSlide(2);setDescription(2);" alt="Please scroll down for Information on the Basketball Shop Project.">
+        </div>
+        <div class="column" style="justify-content: center;">
+            <img class="demo cursor" src="images/Personas.png" style="width:80%" onclick="currentSlide(3);setDescription(3);" alt="Please scroll down for Information on the Personas Project.">
+        </div>
+        <div class="column" style="justify-content: center;">
+            <img class="demo cursor" src="images/Cambio Screenshot.png" style="width:80%" onclick="currentSlide(4);setDescription(4);" alt="Please scroll down for Information on the Cambio Design Project.">
+        </div>
+        </div>
+    </div>
+
+    <div class="justify-content-center align-items-center">
+        <div class="card-row" style="display: flex;">
+            <div class="infocard justify-content-center" data-aos="fade-up" data-aos-duration="2000" style="margin: 2rem;">
+            <h3 class="cardtext">Overview:</h3>
+            <p id="overviewtext" class="cardtext">
+                The Samson Realty Project was a redesign of a realty company website in Providence, Rhode Island. The old website was outdated, riddled with ads, 
+                and not responsive to different devices. This project gave me the opportunity to practice both simplistic design and programming skills, as I created
+                a much more simplistic interface for the realty company that was responsive to multiple device sizes. You can read more about this project 
+                by clicking <a href="https://zanyzebra175.github.io/responsiveredesignhandin/" target="_blank">this link</a>. 
+            </p>
+            </div>
+            <div class="infocard justify-content-center" data-aos="fade-up" data-aos-duration="2500" style="margin: 2rem;">
+                <h3 class="cardtext">Goods:</h3>
+                <p id="goodstext" class="cardtext">
+                    This project gave me the opportunity to work heavily with wireframing, specifically through Figma. In redesigning the
+                    website from scratch, I had to take into account design principles such as color, layout, and accessibility. Additionally, I
+                    had the opportunity to work with the Bootstrap library in my web development for this project, giving me experience with 
+                    important web elements such as Nav Bars and more. 
+                </p>
+            </div>
+            <div class="infocard justify-content-center" data-aos="fade-up" data-aos-duration="3000" style="margin: 2rem;">
+                <h3 class="cardtext">Growths:</h3>
+                <p id="growthstext" class="cardtext">  
+                    Given the scope of the project, there were elements of the redesigned website that were static/not made to be completely functional. If I had
+                    more time, for example, I would have implemented a working carousel feature for the house listings as is demonstrated on the website. However,
+                    you may notice that working carousel functionality has been implemented through this portfolio, so I did have the opportunity
+                    to work on ideas for growth and implement them going forward!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- The following JS is adapted from https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp-->
+    <script>
+        var overview = "";
+        var goods = "";
+        var growths = "";
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("demo");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+        setDescription(n);
+        }
+
+        function setDescription(n){
+            if (n == 1){
+                overview = 'The Samson Realty Project was a redesign of a realty company website in Providence, Rhode Island. The old website was outdated, riddled with ads, and not responsive to different devices. This project gave me the opportunity to practice both simplistic design and programming skills, as I created a much more simplistic interface for the realty company that was responsive to multiple device sizes. You can read more about this project  by clicking <a href="https://zanyzebra175.github.io/responsiveredesignhandin/" target="_blank">this link</a>.'
+                goods = 'This project gave me the opportunity to work heavily with wireframing, specifically through Figma. In redesigning the website from scratch, I had to take into account design principles such as color, layout, and accessibility. Additionally, I had the opportunity to work with the Bootstrap library in my web development for this project, giving me experience with important web elements such as Nav Bars and more.'
+                growths = 'Given the scope of the project, there were elements of the redesigned website that were static/not made to be completely functional. If I had more time, for example, I would have implemented a working carousel feature for the house listings as is demonstrated on the website. However, you may notice that working carousel functionality has been implemented through this portfolio, so I did have the opportunity to work on ideas for growth and implement them going forward!'
+            }
+            else if (n == 2){
+                overview = 'The Basketball Barn project was a shopping concept website coded primarily in React, and offers features such as a shopping cart that keeps track of both items added and total cost, as well as the ability to remove items. The website includes both sorting and filtering functionality, catered to the user and their preferences when navigating through the website. You can visit the project website by clicking <a href="https://zanyzebra175.github.io/basketball-shop/" target="_blank">this link</a>.'
+                goods = 'This project allowed me to practice the fundamental features of a state-based language such as React, and I was able to learn how to keep track of and auto-update website features while also working working different components (shopping cart, item cards, etc.). From the user experience perspective, I thought about what sort of ways a user would want to sort and filter through the provided options to find items relevant to them, and implemented the sorting and filtering features accordingly.'
+                growths = 'Since this project was focused much more so on the programming aspects, there is certainly some room for growth from the design perspecive. Implementing Navbar functionality for the sorting/filtering may have made the user experience slightly more intuitive, and color styling/component layout could have been optimized to show more information to the user at any given point in using the application. '
+            }
+            else if (n == 3){
+                overview = 'The Personas Project was uniquely design and research focused, with less of a programming angle than some of the others. For this project, I analyzed a real-life interface (the Snackpass Kiosk at Ten One Tea House on Thayer Street) and conducted user research to see how individuals interacted with the interface, as well as frustrations they faced. I then had the opportunity to design empathy maps and an example storyboard. Click <a href="https://zanyzebra175.github.io/personasproject/" target="_blank">this link</a> to learn more.'
+                goods = 'As someone specifically interested in user research and user psychology, this project allowed me to step into the shoes of a product user, going so far as to construct characters based on real life interactions and think about how said characters would interact with the interface. This process allowed me to practice critical thinking skills as it relates to designing and critiquing interfaces with a specific focus on the user and their experience.'
+                growths = 'Given the lack of programming involved in this project, if I had the opportunity to continue moving forward with said project, I would undoubtedly attempted to redesign the interface that was studied, perhaps even going so far as to provide my feedback to the company that created the interface. As a potential future Product Manager, I would want to ensure that I can also practice execution of research, not just the conduction of research itself.'
+            }
+            else if (n == 4){
+                overview = 'The Cambio Design project was a group initiative that involved finding a startup through the Y Combinator directory, research what their platform or concepts does, and creating a potential app/website design that we then conducted online user research on. Feedback from user research, as well as peers, was incoorporated into the final design of the app, which was then sent to the company themselves. Click <a href="https://fastgorilla146.github.io/Iterative-Design/" target="_blank">this link</a> to learn more. '
+                goods = 'One major skill that came out of this project was increased familiarity with online user testing platforms. As a hopeful user researcher/PM, having the ability to filter by demographic information to test interfaces with different users across the world is an extremely useful skill, and learning how to design effective interfaces for a variety of ideas (including this company, which was a climate change startup) provides for increased flexibility.'
+                growths = 'From a design perspective, our group chose to structure the product such that it would be best optimized for a tablet. However, this was a design decision that may have been contrary to what the company had in mind. If there were more time available, it would have been prudent to talk to the company we were designing for ahead time, learn what they felt were their strengths and weaknesses as a platform, and catered our design to address these concerns.'
+            }
+            else{
+                overview = 'The Samson Realty Project was a redesign of a realty company website in Providence, Rhode Island. The old website was outdated, riddled with ads, and not responsive to different devices. This project gave me the opportunity to practice both simplistic design and programming skills, as I created a much more simplistic interface for the realty company that was responsive to multiple device sizes. You can read more about this project  by clicking <a href="https://zanyzebra175.github.io/responsiveredesignhandin/" target="_blank">this link</a>.'
+                goods = 'This project gave me the opportunity to work heavily with wireframing, specifically through Figma. In redesigning the website from scratch, I had to take into account design principles such as color, layout, and accessibility. Additionally, I had the opportunity to work with the Bootstrap library in my web development for this project, giving me experience with important web elements such as Nav Bars and more.'
+                growths = 'Given the scope of the project, there were elements of the redesigned website that were static/not made to be completely functional. If I had more time, for example, I would have implemented a working carousel feature for the house listings as is demonstrated on the website. However, you may notice that working carousel functionality has been implemented through this portfolio, so I did have the opportunity to work on ideas for growth and implement them going forward!'
+            }
+            document.getElementById('overviewtext').innerHTML = overview;
+            document.getElementById('goodstext').innerHTML = goods;
+            document.getElementById('growthstext').innerHTML = growths;
+        }
+        </script>
+    
+
+    
+    <hr style="background-color:black; height:10px; width:100%;color:black">
+
+    <br>
+    <div>
+        <h4 style="font-style: italic;">Thank you for taking the time to check out my portfolio!</h4>
+    </div>
+    <br>
+
+</div>
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({});
+</script>
+</body>
+</html>
